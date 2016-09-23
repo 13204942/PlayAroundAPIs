@@ -1,0 +1,32 @@
+.navbar-custom {
+    background-color: #72C5C4;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-color: #4BA19F;
+}
+
+.navbar-brand-custom {
+    color: #FBFFFF;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.navbar-brand-custom {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  line-height: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FBFFFF;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #5E6161;
+    font-size: 20px;
+    font-family: Arial;
+}

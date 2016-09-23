@@ -1,0 +1,15 @@
+<form ng-submit="submit()">
+		<div class="form-group">
+			<p>Ten Random Jokes</p>
+		</div>
+		<div class="form-group">
+			<button type="button" class="btn btn-primary" ng-click='refresh()'>Refresh</button>
+		</div>
+</form>
+<div ng-repeat="joke in jokesResult.value">  
+    <div class="row">
+        <div clas="col-md-6">
+            <joke-view joke-detail="joke"></joke-view>
+        </div>
+    </div>
+</div>
