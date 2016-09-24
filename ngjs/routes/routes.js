@@ -18,9 +18,9 @@ weatherApp.config(function($routeProvider) {
         controller: 'forecastController'
     })
     
-    .when('/photos', {
-        templateUrl: 'pages/photos.htm',
-        controller: 'photosController'
+    .when('/news', {
+        templateUrl: 'pages/news.htm',
+        controller: 'newsController'
     })
 		
 		.when('/jokes', {

@@ -24,3 +24,14 @@ weatherApp.directive("jokeView", function() {
     }
 })
 
+weatherApp.directive("newsView", function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'directives/newsView.html',
+        replace: true,
+        scope: {
+            newsDetail: "="
+        }
+    }
+})
+

@@ -37,17 +37,25 @@ weatherApp.controller('forecastController', ['$scope', '$routeParams', 'cityServ
     
 }]);
 
-weatherApp.controller('photosController', ['$scope', function($scope) {
+weatherApp.controller('newsController', ['$scope', 'newsService', '$route', function($scope, newsService, $route) {
     
-    $scope.string = "Fresh photos today";
+    var promise = newsService.GetNews();
+    promise.then(function(data) {
+        $scope.newsResult = data;
+    });
+    
+    $scope.refresh = function() {
+        $route.reload();
+    };
     
 }]);
 
 weatherApp.controller('jokesController', ['$scope', 'jokeService', '$route', function($scope, jokeService, $route) {
     
     $scope.jokesResult = jokeService.GetJokes();
+    console.log($scope.jokesResult);
 	
-	  $scope.refresh = function() {
+    $scope.refresh = function() {
         $route.reload();
     };
     
