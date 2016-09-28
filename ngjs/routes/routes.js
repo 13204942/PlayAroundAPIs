@@ -7,6 +7,11 @@ weatherApp.config(function($routeProvider) {
         templateUrl: 'pages/home.htm',
         controller: 'homeController'
     })
+		
+		.when('/weather', {
+        templateUrl: 'pages/search.htm',
+        controller: 'searchController'
+    })
     
     .when('/forecast', {
         templateUrl: 'pages/forecast.htm',

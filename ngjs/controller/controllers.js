@@ -1,5 +1,9 @@
 // CONTROLLERS
-weatherApp.controller('homeController', ['$scope', '$location', 'cityService', function($scope, $location, cityService) {
+weatherApp.controller('homeController', ['$scope', function($scope) {
+	
+}]);
+
+weatherApp.controller('searchController', ['$scope', '$location', 'cityService', function($scope, $location, cityService) {
     
     $scope.city = cityService.city;
     
