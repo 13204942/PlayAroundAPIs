@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-us" ng-app="newsweatherApp">>
+  <head>
+    <meta charset="utf-8">
+    <title>News and Weather</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mycss.css">
+    <style>
+      html, body, input, select, textarea
+      {
+        font-size: 1.05em !important;
+      }
+    </style>
+    <!-- endbuild -->
+  </head>
+  <body ng-app="newsweatherApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header>
+      <nav class="navbar navbar-default navbar-custom">
+        <div class="container">
+          <div class="navbar-header">
+            <ul class="nav navbar-nav">
+              <li><a href="#/"><brand>SmallBox</brand></a></li>
+            </ul>
+          </div>
+                  
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/weather"><i class="fa fa-home"></i> Weather</a></li>
+          </ul>
+                  
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/news"><i class="fa fa-home"></i> News</a></li>
+          </ul>
+                  
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/jokes"><i class="fa fa-home"></i> Jokes</a></li>
+          </ul>
+            </div>
+      </nav>        
+    </header>
+
+    <div class="container">
+      <div ng-view class="col-md-offset-3 col-md-6">
+      </div>    
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/homecontroller.js"></script>
+        <script src="scripts/controllers/searchcontroller.js"></script>
+        <script src="scripts/controllers/forecastcontroller.js"></script>
+        <script src="scripts/controllers/newscontroller.js"></script>
+        <script src="scripts/controllers/jokescontroller.js"></script>
+        <script src="scripts/directives/weatherreport.js"></script>
+        <script src="scripts/directives/jokeview.js"></script>
+        <script src="scripts/directives/newsview.js"></script>
+        <script src="scripts/services/cityservice.js"></script>
+        <script src="scripts/services/weatherservice.js"></script>
+        <script src="scripts/services/jokeservice.js"></script>
+        <script src="scripts/services/newsservice.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
