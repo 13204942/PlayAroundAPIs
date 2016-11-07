@@ -13,7 +13,7 @@ angular.module('newsweatherApp')
         templateUrl: 'templates/jokeView.html',
         replace: true,
         scope: {
-            jokeDetail: "="
+            jokeDetail: '='
         }
     };
   });

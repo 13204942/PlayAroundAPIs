@@ -11,8 +11,8 @@ angular.module('newsweatherApp')
   .service('jokeService', ['$resource', function($resource) {
 
 	this.GetJokes = function() {
-    var jokeAPI = $resource("http://api.icndb.com/jokes/random/10", {
-    callback: "JSON_CALLBACK" }, {get: { method: "JSONP"}});
+    var jokeAPI = $resource('http://api.icndb.com/jokes/random/10', {
+    callback: 'JSON_CALLBACK' }, {get: { method: 'JSONP'}});
 
     return jokeAPI.get(); 
     };

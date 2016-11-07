@@ -1,3 +1,5 @@
+'use strict';
+
 // ROUTES
 angular.module('nesweatherApp').config(function($routeProvider) {
     
@@ -31,5 +33,5 @@ angular.module('nesweatherApp').config(function($routeProvider) {
 	.when('/jokes', {
         templateUrl: 'pages/jokes.htm',
         controller: 'jokesController'
-    })
+    });
 });

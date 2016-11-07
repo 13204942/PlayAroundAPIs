@@ -20,6 +20,6 @@ angular.module('newsweatherApp')
     });
     
     $scope.submit = function() {
-        $location.path("/forecast");
+        $location.path('/forecast');
     };
   }]);

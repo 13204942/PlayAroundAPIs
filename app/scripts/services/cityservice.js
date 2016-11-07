@@ -9,5 +9,5 @@
  */
 angular.module('newsweatherApp')
   .service('cityService', function () {
-    this.city = "Dublin, IE";
+    this.city = 'Dublin, IE';
   });

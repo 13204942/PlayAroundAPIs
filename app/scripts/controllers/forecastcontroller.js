@@ -26,5 +26,5 @@ angular.module('newsweatherApp')
         
         return new Date(dt * 1000);
         
-    }
+    };
   }]);

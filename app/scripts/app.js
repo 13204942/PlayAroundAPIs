@@ -46,5 +46,5 @@ angular.module('newsweatherApp', [
 	.when('/jokes', {
         templateUrl: 'views/jokes.html',
         controller: 'jokesController'
-    })
+    });
 });

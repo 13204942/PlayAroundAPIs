@@ -13,9 +13,9 @@ angular.module('newsweatherApp')
         templateUrl: 'templates/weatherReport.html',
         replace: true,
         scope: {
-            weatherDay: "=",
-            convertToDate: "&",
-            dateFormat: "@"
+            weatherDay: '=',
+            convertToDate: '&',
+            dateFormat: '@'
         }
     };
   });
