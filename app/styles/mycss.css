@@ -35,3 +35,8 @@
     font-size: 36px;
     font-family: Century Gothic;
 }
+
+.container {
+  display : flex;
+  align-items : center;
+}

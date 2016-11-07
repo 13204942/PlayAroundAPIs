@@ -13,7 +13,7 @@ angular.module('newsweatherApp')
         templateUrl: 'templates/newsView.html',
         replace: true,
         scope: {
-            newsDetail: "="
+            newsDetail: '='
         }
     };
   });
