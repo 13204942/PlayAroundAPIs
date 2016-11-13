@@ -28,10 +28,12 @@ angular.module('nesweatherApp').config(function($routeProvider) {
     .when('/news', {
         templateUrl: 'pages/news.htm',
         controller: 'newsController'
-    })
-		
+    });
+	
+    /*	
 	.when('/jokes', {
         templateUrl: 'pages/jokes.htm',
         controller: 'jokesController'
     });
+    */
 });
