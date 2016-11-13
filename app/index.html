@@ -2,7 +2,7 @@
 <html lang="en-us" ng-app="newsweatherApp">
   <head>
     <meta charset="utf-8">
-    <title>News and Weather</title>
+    <title>Top Headlines</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -35,10 +35,10 @@
         <div class="container">
           <div class="navbar-header">
             <ul class="nav navbar-nav">
-              <li><a href="#/"><brand>SmallBox</brand></a></li>
+              <li><a href="#/"><brand><blue>Top</blue>Headlines</brand></a></li>
             </ul>
           </div>
-                  
+               
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#/weather"><i class="fa fa-home"></i> Weather</a></li>
           </ul>
@@ -47,12 +47,17 @@
             <li><a href="#/news"><i class="fa fa-home"></i> News</a></li>
           </ul>
                   
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#/jokes"><i class="fa fa-home"></i> Jokes</a></li>
-          </ul>
-            </div>
+          <!--<ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-home"></i> Jokes</a></li>
+          </ul>-->
+
+        </div>
       </nav>        
     </header>
+
+    <div class="col-md-12">
+      <category></category>
+    </div>
 
     <div class="container">
       <!--<div ng-view class="col-md-offset-3 col-md-6">-->
@@ -104,6 +109,7 @@
         <script src="scripts/services/weatherservice.js"></script>
         <script src="scripts/services/jokeservice.js"></script>
         <script src="scripts/services/newsservice.js"></script>
+        <script src="scripts/directives/category.js"></script>
         <!-- endbuild -->
 </body>
 </html>
