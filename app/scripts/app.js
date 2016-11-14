@@ -42,6 +42,11 @@ angular.module('newsweatherApp', [
         templateUrl: 'views/news.html',
         controller: 'newsController'
     })
+
+    .when('/news/:source', {
+        templateUrl: 'views/news.html',
+        controller: 'newsController'
+    })
 		
 	.when('/jokes', {
         templateUrl: 'views/jokes.html',

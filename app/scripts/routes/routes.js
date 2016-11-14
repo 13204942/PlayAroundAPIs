@@ -24,13 +24,22 @@ angular.module('nesweatherApp').config(function($routeProvider) {
         templateUrl: 'pages/forecast.htm',
         controller: 'forecastController'
     })
-    
+
     .when('/news', {
         templateUrl: 'pages/news.htm',
         controller: 'newsController'
+    })
+
+    .when('/news/:source', {
+        templateUrl: 'pages/news.htm',
+        controller: 'newsController'
+    })
+
+    .otherwise({
+        redirectTo: '/'
     });
-	
-    /*	
+
+	/*	
 	.when('/jokes', {
         templateUrl: 'pages/jokes.htm',
         controller: 'jokesController'

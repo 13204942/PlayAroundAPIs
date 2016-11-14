@@ -10,16 +10,22 @@
 angular.module('newsweatherApp')
   .service('newsService', ['$http', '$q',function($http, $q) {
   	var deferred = $q.defer();
-    
-    var url = 'https://newsapi.org/v1/articles?source=financial-times&sortBy=top&apiKey=bc1b09b5f6924ee3951ea58355e17799';
 
-    $http.get(url).success(function(data) {
+    /*var sourceUrl = function(source) {
+      return 'https://newsapi.org/v1/articles?source=' + source + '&sortBy=top&apiKey=bc1b09b5f6924ee3951ea58355e17799';
+    };*/
+    
+    this.GetNews = function(source) {
+
+      var sourceUrl = 'https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=bc1b09b5f6924ee3951ea58355e17799';
+      console.log(source);
+
+      $http.get('https://newsapi.org/v1/articles?source='+source+'&sortBy=top&apiKey=bc1b09b5f6924ee3951ea58355e17799').success(function(data) {
         deferred.resolve(data);
-    });
-    
-    this.GetNews = function() {
-        return deferred.promise;
-    };
+      });
+      console.log(deferred.promise);
 
-    console.log(this.GetNews());
+      return deferred.promise;
+    };
+    
   }]);
