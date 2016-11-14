@@ -2,14 +2,15 @@
 
 /**
  * @ngdoc directive
- * @name newsweatherApp.directive:category
+ * @name newsweatherApp.directive:categoryView
  * @description
- * # category
+ * # categoryView
  */
 angular.module('newsweatherApp')
   .directive('category', function () {
     return {
-    	restrict: 'E',
-    	templateUrl: 'templates/categoryView.html'
+        restrict: 'E',
+        templateUrl: 'templates/categoryView.html',
+        replace: true
     };
   });
